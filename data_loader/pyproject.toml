@@ -9,7 +9,7 @@ description = "Unified, fail-safe data loaders for memory-pair experiments"
 readme      = "README.md"
 license     = {text = "MIT"}
 authors     = [
-  {name = "Second Street Labs", email = "contact@secondstreetlabs.ai"}
+  {name = "Second Street Labs", email = "hi@secondstreetlabs.io"}
 ]
 # ───────────────────────────────
 # Core runtime requirement
