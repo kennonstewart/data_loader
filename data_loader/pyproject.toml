@@ -11,8 +11,6 @@ license     = {text = "MIT"}
 authors     = [
   {name = "Second Street Labs", email = "contact@secondstreetlabs.ai"}
 ]
-python-requires = ">=3.9"
-
 # ───────────────────────────────
 # Core runtime requirement
 # ───────────────────────────────
