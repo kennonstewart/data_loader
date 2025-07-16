@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name        = "data_loader"
+version     = "0.1.0"
+description = "Unified, fail-safe data loaders for memory-pair experiments"
+readme      = "README.md"
+license     = {text = "MIT"}
+authors     = [
+  {name = "Second Street Labs", email = "contact@secondstreetlabs.ai"}
+]
+python-requires = ">=3.9"
+
+# ───────────────────────────────
+# Core runtime requirement
+# ───────────────────────────────
+dependencies = [
+  "numpy>=1.22"
+]
+
+# ───────────────────────────────
+# Optional extras
+#   pip install data_loader[vision]
+#   pip install data_loader[tabular]
+# ───────────────────────────────
+[project.optional-dependencies]
+vision   = [
+  "torch>=2.2",
+  "torchvision>=0.17"
+]
+tabular  = [
+  "scikit-learn>=1.3"
+]
+dev      = [
+  "pytest",
+  "black",
+  "ruff"
+]
+
+[tool.setuptools]
+packages = ["data_loader"]
+
+[tool.setuptools.package-data]
+# keep README and any example notebooks inside source dist
+"data_loader" = ["*.md", "*.ipynb"]
+
+[tool.setuptools.exclude-package-data]
+"data_loader" = ["cache/*", "results/*"]
+
+[tool.black]
+line-length = 88
