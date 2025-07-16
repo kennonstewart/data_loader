@@ -1,0 +1,9 @@
+# Core dependencies
+numpy>=1.19.0
+
+# Optional dependencies for real data loading
+# torchvision  # For MNIST and CIFAR10 - optional, will fallback to simulation
+# scikit-learn  # For Covtype dataset - optional, will fallback to simulation
+
+# Optional dependency for image rotation
+# scipy  # For image rotation in drift mode - optional, will fallback to noise
