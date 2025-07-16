@@ -3,7 +3,7 @@ requires = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name        = "data_loader"
+name        = "data/data_loader"
 version     = "0.1.0"
 description = "Unified, fail-safe data loaders for memory-pair experiments"
 readme      = "README.md"
